@@ -7,8 +7,10 @@ import Test from "./Test";
 // import CryptoPrices from "./CryptoPrices";
 // import PhoneInput from "./PhoneInput";
 import ConnectFour from "./ConnectFour";
+import { useStateWithHistory } from "./useStateWithHistory";
 
 export default function App() {
+  const [value, setValue] = useStateWithHistory(10);
   return (
     <>
       <ConnectFour />
